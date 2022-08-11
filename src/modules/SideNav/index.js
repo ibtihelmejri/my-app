@@ -5,8 +5,9 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import {Link} from 'react-router-dom'
 export const SideNav = () => {
   return (
+    
     <div className="sideNav">
-      <div className="sideNav-header">
+      {/* <div className="sideNav-header">
       <div> <img src={logoApp} alt="logo"/></div>
       <div> <NotificationsNoneIcon color="action"/></div>
       <div> <AccountCircleIcon color="action"/></div>
@@ -14,7 +15,8 @@ export const SideNav = () => {
       <nav>
         <Link to="/"> Home</Link>
         <Link to="/users">Users</Link>
-      </nav>
+      </nav> */}
     </div>
+  
   );
 };

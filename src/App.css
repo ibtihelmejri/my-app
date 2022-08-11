@@ -1,10 +1,23 @@
 .sideNav{
   background-color: #5B13B4;
-  display: grid;
-  grid-template-columns: 1fr ;
+  /* display: grid;
+  grid-template-columns: 1fr ; */
   height: 100vh;
-  width: 300px;
+  width: 280px;
   padding: 10px;
+  position: fixed;
+  border-radius: 15px;
+}
+.main{
+  margin-left: 300px;
+  box-sizing: border-box;
+}
+.layout{
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.containte{
+  height: 90vh;
 }
 /* 
 .sideNav-header{
