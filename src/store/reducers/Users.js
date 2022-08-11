@@ -1,16 +1,19 @@
 import { GET_USERS } from "../actionTypes";
 
+
 const initialState = {
-  users: [],
-};
-
-const Users = (state = initialState, action) => {
-  if (action.type === GET_USERS) {
-    return Object.assign({}, state, {
-      users: action.payload.data,
-    });
+    users: [],
+  };
+  export default function (state = initialState, action) {
+    switch (action.type) {
+      case GET_USERS: {
+        return {
+          ...state,
+          users: action.payload,
+        };
+      }
+  
+      default:
+        return state;
+    }
   }
-
-  return state;
-};
-export default Users;
