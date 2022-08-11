@@ -6,12 +6,12 @@
   width: 300px;
   padding: 10px;
 }
-
+/* 
 .sideNav-header{
   display: grid;
   grid-template-columns: 5fr 1fr 1fr;
   
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
