@@ -1,6 +1,6 @@
 
 import './App.css';
-import {SideNav} from './Components/SideNav'
+import {SideNav} from './modules/SideNav'
 
 function App() {
   return (
