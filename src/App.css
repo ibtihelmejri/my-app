@@ -1,5 +1,8 @@
-.sideNav{
-  background-color: #5B13B4;
+body {
+  background-color: #f8f7ff;
+}
+.sideNav {
+  background-color: #5b13b4;
   /* display: grid;
   grid-template-columns: 1fr ; */
   height: 100vh;
@@ -8,31 +11,87 @@
   position: fixed;
   border-radius: 15px;
 }
-.main{
-  margin-left: 300px;
+.main {
+  margin-left: 270px;
   box-sizing: border-box;
 }
-.layout{
+.layout {
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.containte{
+.containte {
   height: 90vh;
 }
-/* 
-.sideNav-header{
-  display: grid;
-  grid-template-columns: 5fr 1fr 1fr;
-  
-} */
+
+.bell-icons {
+  width: 10px;
+  display: inline-block;
+  height: 10px;
+}
+
+.bell-icons img {
+  width: 100%;
+}
+
+.card-dasboard {
+  width: 260px;
+  display: inline-block;
+  height: 200px;
+  text-align: center;
+}
+
+.card-dasboard img {
+  width: 100%;
+}
+.inline-block {
+  display: inline-block;
+  background-color: #834bf2;
+  width: 80px;
+  height: 40px;
+  border-radius: 30px;
+  text-align: center;
+}
+.centre-aide {
+  display: inline-block;
+  background-color: #f9bd1f;
+  width: 160px;
+  height: 40px;
+  border-radius: 30px;
+  text-align: center;
+  margin-right: 15px;
+}
+.font-btn {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.fontstyle {
+  font-size: 14px;
+  margin: 0%;
+}
+
+.paperStyle {
+  height: 300px;
+}
+ 
+.number-style {
+text-align: center;
+font-size: 45px;
+color: #834bf2;
+
+}
+
+.title-style{
+  text-align: center;
+  font-size: 16px;
+  color: #707070;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-
 
 @keyframes App-logo-spin {
   from {
