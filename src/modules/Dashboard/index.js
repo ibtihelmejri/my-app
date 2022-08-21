@@ -13,6 +13,11 @@ import Groupe172 from "../../assets/images/Groupe172@2x.png";
 import Groupe196 from "../../assets/images/Groupe196@2x.png";
 import BasicTable from "../../Components/Table";
 import book from "../../assets/images/ico@2x.png";
+import cantine from "../../assets/images/Groupe351@2x.png";
+import { BasicCard } from "../../Components/Card";
+import platOne from "../../assets/images/Groupedemasques2@2x.png";
+import platTwo from "../../assets/images/Groupedemasques3@2x.png";
+import platThree from "../../assets/images/Groupedemasques4@2x.png";
 
 export const Dashboard = () => {
   return (
@@ -152,8 +157,9 @@ export const Dashboard = () => {
                 </div>
                 <div className="m-3">
                   <select
-                    class="form-select form-select-lg mb-3"
-                    aria-label=".form-select-lg example"
+                    className="form-select form-select-md mb-3 "
+                    style={{borderColor: '#834bf2', backgroundColor: "#E6E6FA", borderRadius: "10px" }}
+                    // aria-label=".form-select-lg example"
                   >
                     <option selected>Aujourd'hui</option>
                     <option value="1">One</option>
@@ -169,36 +175,65 @@ export const Dashboard = () => {
           </div>
 
           {/* ligne 4 */}
-          <div className="d-flex flex-row">
-            <div className="col-md-6 me-5">
+          <div className="d-flex row gx-3">
+            <div className="col-md-6 ">
               <div className=" mt-5 d-block bg-white">
-                <div className="d-flex flex-row">
-                  <div className="p-2 col-md-4">bbbbbb</div>
-                  <div className="p-2 col-md-4">ttttttttt</div>
-                  <div className="p-2 col-md-4">wwwwwwwwwww</div>
+                  <div className="d-flex flex-column ">
+                  <div className="d-flex flex-row justify-content-between">
+                <div className=" m-3">
+                  <div className="d-flex flex-row">
+                    <div className="p-1 ">
+                      <img
+                        src={cantine}
+                        alt="timetable"
+                        className="img-fluid"
+                        style={{ width: "27px" }}
+                      />
+                    </div>
+                    <div className="p-1">
+                      {" "}
+                      <h5>
+                        <strong>Cantine (Menu du jour)</strong>{" "}
+                      </h5>
+                    </div>
+                  </div>
                 </div>
-                {/* <div className="card">
-  <div className="card-img-top">
-    <img src="Groupe196" alt=""/>
-
-  </div>
-  <div className="card-body">
-    <p className="card-text"> A well-known quote, contained in a blockquote element.</p>
-
-  </div>
-
-</div> */}
+                <div className="m-3">
+                  <select
+                    className="form-select form-select-md mb-3 "
+                    style={{borderColor: '#834bf2', backgroundColor: "#E6E6FA", borderRadius: "10px"}}
+                    // aria-label=".form-select-lg example"
+                  >
+                    <option selected>Aujourd'hui</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
               </div>
+                  <div className="d-flex row m-2">
+                    <BasicCard imgSrc={platOne} title="Blanquette de saumon" />
+                    <BasicCard imgSrc={platTwo} title={"Boulette Boeuf haché"} />
+                    <BasicCard imgSrc={platThree} title={"Crème caramel"} />
+               
+                </div>
+                  </div>
+
+                
+
+              </div>
+           
+           
             </div>
 
             <div className="col-md-6">
-              <div className=" mt-5 d-block bg-white">cercle</div>
+              <div className=" mt-5 d-block bg-white">cercl      fffffffffffffe</div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="p-2 col-md-3 d-flex flex-row">calendar</div>
+      <div className="p-2 col-md-3 d-flex row">calendar</div>
     </div>
   );
 };

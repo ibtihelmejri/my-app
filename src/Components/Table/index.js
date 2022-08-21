@@ -4,6 +4,7 @@ import Groupe334 from "../../assets/images/Groupe334@2x.png";
 import Groupe336 from "../../assets/images/Groupe336@2x.png";
 import Groupe340 from "../../assets/images/Groupe340@2x.png";
 import Groupe338 from "../../assets/images/Groupe338@2x.png";
+import { textAlign } from "@mui/system";
 
 export default function BasicTable() {
   return (
@@ -102,7 +103,7 @@ export default function BasicTable() {
           <td>Lab3</td>
           <td>10h00 - 12h00</td>
           <td>
-            <span className="badge bg-secondary"> Reporté</span>
+            <span className="badge bg-secondary" > Reporté</span>
           </td>
         </tr>
 

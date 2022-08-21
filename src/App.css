@@ -73,19 +73,20 @@ body {
 .paperStyle {
   height: 300px;
 }
- 
-.number-style {
-text-align: center;
-font-size: 45px;
-color: #834bf2;
 
+.number-style {
+  text-align: center;
+  font-size: 45px;
+  color: #834bf2;
 }
 
-.title-style{
+.title-style {
   text-align: center;
   font-size: 16px;
   color: #707070;
 }
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
